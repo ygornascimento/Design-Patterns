@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F459D6A223C233FB00617712 /* QuestionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D6A123C233FB00617712 /* QuestionViewControllerDelegate.swift */; };
+		F4937A4C23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */; };
+		F4937A4E23C0CFBD00D2F20A /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4937A4D23C0CFBD00D2F20A /* QuestionGroupCell.swift */; };
 		F4B5EB2923BDE5BE00972FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2823BDE5BE00972FE4 /* AppDelegate.swift */; };
 		F4B5EB2B23BDE5BE00972FE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2A23BDE5BE00972FE4 /* SceneDelegate.swift */; };
 		F4B5EB2D23BDE5BE00972FE4 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2C23BDE5BE00972FE4 /* QuestionViewController.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F459D6A123C233FB00617712 /* QuestionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerDelegate.swift; sourceTree = "<group>"; };
+		F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		F4937A4D23C0CFBD00D2F20A /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
 		F4B5EB2523BDE5BE00972FE4 /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5EB2823BDE5BE00972FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B5EB2A23BDE5BE00972FE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F459D6A023C2330E00617712 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F459D6A123C233FB00617712 /* QuestionViewControllerDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F4B5EB1C23BDE5BE00972FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +78,7 @@
 		F4B5EB2723BDE5BE00972FE4 /* RabbleWabble */ = {
 			isa = PBXGroup;
 			children = (
+				F459D6A023C2330E00617712 /* Protocols */,
 				F4B5EB3C23BDE6B100972FE4 /* AppDelegate */,
 				F4B5EB4023BDE70E00972FE4 /* Resources */,
 				F4B5EB3F23BDE6DD00972FE4 /* Models */,
@@ -86,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B5EB2C23BDE5BE00972FE4 /* QuestionViewController.swift */,
+				F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +112,7 @@
 				F4B5EB2E23BDE5BE00972FE4 /* Main.storyboard */,
 				F4B5EB4923BDE96600972FE4 /* LaunchScreen.storyboard */,
 				F4B5EB4B23BDEA4500972FE4 /* QuestionView.swift */,
+				F4937A4D23C0CFBD00D2F20A /* QuestionGroupCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +212,10 @@
 				F4B5EB4223BDE80600972FE4 /* Question.swift in Sources */,
 				F4B5EB2923BDE5BE00972FE4 /* AppDelegate.swift in Sources */,
 				F4B5EB4623BDE90900972FE4 /* QuestionGroupData.swift in Sources */,
+				F4937A4E23C0CFBD00D2F20A /* QuestionGroupCell.swift in Sources */,
 				F4B5EB4423BDE87400972FE4 /* QuestionGroup.swift in Sources */,
+				F459D6A223C233FB00617712 /* QuestionViewControllerDelegate.swift in Sources */,
+				F4937A4C23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift in Sources */,
 				F4B5EB2B23BDE5BE00972FE4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
