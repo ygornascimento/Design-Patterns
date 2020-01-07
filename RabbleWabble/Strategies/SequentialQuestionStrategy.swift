@@ -1,5 +1,5 @@
 //
-//  SequentialSQuestionStrategy.swift
+//  SequentialQuestionStrategy:.swift
 //  RabbleWabble
 //
 //  Created by Ygor Nascimento on 07/01/20.
