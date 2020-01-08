@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol QuestionViewControllerDelegate: class {
-    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionGroup, at questionIndex: Int)
-    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionGroup)
+public protocol QuestionViewControllerDelegate: AnyObject {
+    func questionViewController(_ viewController: QuestionViewController, didCancel questionGroup: QuestionStrategy)
+    func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionStrategy)
 }

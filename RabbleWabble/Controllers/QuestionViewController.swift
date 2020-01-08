@@ -11,11 +11,11 @@ import UIKit
 public final class QuestionViewController: UIViewController {
 
     //MARK: - Instance Properties
-    public var questionGroup: QuestionGroup! {
-        didSet {
-            navigationItem.title = questionGroup.title
-        }
-    }
+//    public var questionGroup: QuestionGroup! {
+//        didSet {
+//            navigationItem.title = questionGroup.title
+//        }
+//    }
     private lazy var questionIndexItem: UIBarButtonItem = {
         let item = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         item.tintColor = .black
@@ -57,7 +57,7 @@ public final class QuestionViewController: UIViewController {
     }
     
     @objc private func handleCancelPressed(sender: UIBarButtonItem) {
-        delegate?.questionViewController(self, didCancel: questionGroup, at: questionIndex)
+        delegate?.questionViewController(self, didCancel: questionStrategy)
     }
     
     private func showQuestion() {
@@ -95,8 +95,8 @@ public final class QuestionViewController: UIViewController {
     }
     
     private func showNextQuestion() {
-        questionIndex += 1
-        guard questionIndex < questionGroup.questions.count else {
+        guard questionStrategy.advanceToNextQuestion() else {
+            delegate?.questionViewController(self, didComplete: questionStrategy)
             return
         }
         showQuestion()
