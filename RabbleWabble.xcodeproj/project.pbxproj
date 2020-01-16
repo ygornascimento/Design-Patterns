@@ -13,6 +13,7 @@
 		F459D6A223C233FB00617712 /* QuestionViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F459D6A123C233FB00617712 /* QuestionViewControllerDelegate.swift */; };
 		F4937A4C23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */; };
 		F4937A4E23C0CFBD00D2F20A /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4937A4D23C0CFBD00D2F20A /* QuestionGroupCell.swift */; };
+		F4A3560B23D06FA800D224BB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A3560A23D06FA800D224BB /* AppSettings.swift */; };
 		F4B5EB2923BDE5BE00972FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2823BDE5BE00972FE4 /* AppDelegate.swift */; };
 		F4B5EB2B23BDE5BE00972FE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2A23BDE5BE00972FE4 /* SceneDelegate.swift */; };
 		F4B5EB2D23BDE5BE00972FE4 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB2C23BDE5BE00972FE4 /* QuestionViewController.swift */; };
@@ -32,6 +33,7 @@
 		F459D6A123C233FB00617712 /* QuestionViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewControllerDelegate.swift; sourceTree = "<group>"; };
 		F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
 		F4937A4D23C0CFBD00D2F20A /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+		F4A3560A23D06FA800D224BB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F4B5EB2523BDE5BE00972FE4 /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B5EB2823BDE5BE00972FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B5EB2A23BDE5BE00972FE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				F4B5EB4123BDE80600972FE4 /* Question.swift */,
 				F4B5EB4323BDE87400972FE4 /* QuestionGroup.swift */,
 				F4B5EB4523BDE90900972FE4 /* QuestionGroupData.swift */,
+				F4A3560A23D06FA800D224BB /* AppSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 			files = (
 				F4B5EB2D23BDE5BE00972FE4 /* QuestionViewController.swift in Sources */,
 				F4320F7923C486DD0033248B /* RandomQuestionStrategy.swift in Sources */,
+				F4A3560B23D06FA800D224BB /* AppSettings.swift in Sources */,
 				F4B5EB4C23BDEA4500972FE4 /* QuestionView.swift in Sources */,
 				F4B5EB4223BDE80600972FE4 /* Question.swift in Sources */,
 				F4320F7723C4829B0033248B /* SequentialQuestionStrategy.swift in Sources */,
