@@ -66,7 +66,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yg9-DN-nV4"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Group" id="eBw-p2-5ob"/>
+                    <navigationItem key="navigationItem" title="Select Question Group" id="eBw-p2-5ob">
+                        <barButtonItem key="leftBarButtonItem" image="ic_settings" id="wFa-Hh-5UB">
+                            <connections>
+                                <segue destination="EIF-2K-CcC" kind="show" id="28r-8B-hPH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="jBK-GW-wdc" id="myQ-ge-bIv"/>
                     </connections>
@@ -74,6 +80,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fAT-Sh-Vjt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="286.95652173913044" y="140.625"/>
+        </scene>
+        <!--App Settings-->
+        <scene sceneID="0tO-Ee-2qQ">
+            <objects>
+                <tableViewController title="App Settings" id="EIF-2K-CcC" customClass="AppSettingsViewController" customModule="RabbleWabble" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SDl-zG-8uT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="EIF-2K-CcC" id="NJL-8W-h2b"/>
+                            <outlet property="delegate" destination="EIF-2K-CcC" id="pw6-Yj-mBf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Bqh-qV-RzY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VFs-IQ-mKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="816"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -192,5 +217,6 @@
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
     </resources>
 </document>

@@ -24,6 +24,7 @@
 		F4B5EB4823BDE94200972FE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B5EB4723BDE94200972FE4 /* Assets.xcassets */; };
 		F4B5EB4A23BDE96600972FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B5EB4923BDE96600972FE4 /* LaunchScreen.storyboard */; };
 		F4B5EB4C23BDEA4500972FE4 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B5EB4B23BDEA4500972FE4 /* QuestionView.swift */; };
+		F4B8CB4D23D1A7AD00A74274 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8CB4C23D1A7AD00A74274 /* AppSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F4B5EB4723BDE94200972FE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4B5EB4923BDE96600972FE4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F4B5EB4B23BDEA4500972FE4 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		F4B8CB4C23D1A7AD00A74274 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			children = (
 				F4B5EB2C23BDE5BE00972FE4 /* QuestionViewController.swift */,
 				F4937A4B23C0C77D00D2F20A /* SelectQuestionGroupViewController.swift */,
+				F4B8CB4C23D1A7AD00A74274 /* AppSettingsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				F4B5EB4223BDE80600972FE4 /* Question.swift in Sources */,
 				F4320F7723C4829B0033248B /* SequentialQuestionStrategy.swift in Sources */,
 				F4B5EB2923BDE5BE00972FE4 /* AppDelegate.swift in Sources */,
+				F4B8CB4D23D1A7AD00A74274 /* AppSettingsViewController.swift in Sources */,
 				F4B5EB4623BDE90900972FE4 /* QuestionGroupData.swift in Sources */,
 				F4937A4E23C0CFBD00D2F20A /* QuestionGroupCell.swift in Sources */,
 				F4B5EB4423BDE87400972FE4 /* QuestionGroup.swift in Sources */,
