@@ -17,7 +17,11 @@ public final class SelectQuestionGroupViewController: UIViewController {
     }
     //MARK: - Properties
     private let appSettings = AppSettings.shared
-    public let questionGroups = QuestionGroup.allGroups()
+    //public let questionGroups = QuestionGroup.allGroups()
+    private let questionGroupCaretaker = QuestionGroupCaretaker()
+    private var questionGroups: [QuestionGroup] {
+        return questionGroupCaretaker.questionGroups
+    }
     private var selectedQuestionGroup: QuestionGroup!
     
     public override func viewDidLoad() {

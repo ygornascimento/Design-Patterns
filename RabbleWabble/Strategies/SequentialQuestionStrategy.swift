@@ -16,8 +16,14 @@ public class SequentialQuestionStrategy: QuestionStrategy {
         return questionGroup.title
     }
     
-    public var correctCount: Int = 0
-    public var incorrectCount: Int = 0
+    public var correctCount: Int {
+        get {return questionGroup.score.correctCount}
+        set {questionGroup.score.correctCount = newValue}
+    }
+    public var incorrectCount: Int {
+        get {return questionGroup.score.incorrectCount}
+        set {questionGroup.score.incorrectCount = newValue}
+    }
     
     //MARK: - Object Lifecycle
     public init(questionGroup: QuestionGroup) {
