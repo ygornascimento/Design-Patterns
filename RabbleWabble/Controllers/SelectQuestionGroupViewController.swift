@@ -27,6 +27,12 @@ public final class SelectQuestionGroupViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
+        questionGroups.forEach {
+            print("\($0.title):" +
+                "correctCount \($0.score.correctCount), " +
+                "incorrectCoutn \($0.score.incorrectCount)")
+        }
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -59,7 +65,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionViewController else {return}
-        viewController.questionStrategy = appSettings.questionStrategy(for: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
         viewController.delegate = self
     }
 }

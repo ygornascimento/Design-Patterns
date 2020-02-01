@@ -21,12 +21,12 @@ public enum QuestionStrategyType: Int, CaseIterable {
         }
     }
     
-    public func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
+    public func questionStrategy(for questionGroupCaretaker: QuestionGroupCaretaker) -> QuestionStrategy {
         switch self {
         case .random:
-            return RandomQuestionStrategy(questionGroup: questionGroup)
+            return RandomQuestionStrategy(questionGroupCaretaker: questionGroupCaretaker)
         case .sequential:
-            return SequentialQuestionStrategy(questionGroup: questionGroup)
+            return SequentialQuestionStrategy(questionGroupCaretaker: questionGroupCaretaker)
         }
     }
 }
