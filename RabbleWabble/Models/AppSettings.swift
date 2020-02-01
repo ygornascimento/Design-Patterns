@@ -16,8 +16,9 @@ public class AppSettings {
     public static let shared = AppSettings()
     private init() { }
     
-    public func questionStrategy(for questionGroup: QuestionGroup) -> QuestionStrategy {
-        return questionStrategyType.questionStrategy(for: questionGroup)
+    public func questionStrategy(for questionGroupCaretaker: QuestionGroupCaretaker) -> QuestionStrategy {
+        //return questionStrategyType.questionStrategy(for: questionGroup)
+        return questionStrategyType.questionStrategy(for: questionGroupCaretaker)
     }
     
     private let userDefaults = UserDefaults.standard
@@ -31,5 +32,3 @@ public class AppSettings {
         }
     }
 }
-
-
