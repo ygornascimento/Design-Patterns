@@ -69,9 +69,15 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
     }
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let viewController = segue.destination as? QuestionViewController else {return}
-        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
-        viewController.delegate = self
+//        guard let viewController = segue.destination as? QuestionViewController else {return}
+//        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
+//        viewController.delegate = self
+        if let viewController = segue.destination as? QuestionViewController {
+            viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupCaretaker)
+            viewController.delegate = self
+        } else if let navController = segue.destination as? UINavigationController, let viewController = navController.topViewController as? CreateQuestionGroupViewController {
+            viewController.delegate = self
+        }
     }
 }
 
@@ -83,4 +89,20 @@ extension SelectQuestionGroupViewController: QuestionViewControllerDelegate {
     public func questionViewController(_ viewController: QuestionViewController, didComplete questionGroup: QuestionStrategy) {
         navigationController?.popViewController(animated: true)
     }
+}
+
+extension SelectQuestionGroupViewController: CreateQuestionGroupViewControllerDelegate {
+    public func createQuestionGroupViewController(_ viewController: CreateQuestionGroupViewController, created questionGroup: QuestionGroup) {
+        questionGroupCaretaker.questionGroups.append(questionGroup)
+        try? questionGroupCaretaker.save()
+
+        dismiss(animated: true, completion: nil)
+        tableView.reloadData()
+    }
+
+
+    public func createQuestionGroupViewControllerDidCancel(_ viewController: CreateQuestionGroupViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+
 }
